@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.marshalchen.ultimaterecyclerview.demo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Used to adjust the work load depending on the type of network the device is using. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Used to load images from the gallery content provider. -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MultiViewTypesActivity"
+            android:label="MultiViewTypesActivity" />
+        <activity
+            android:name=".GridLayoutRVTest"
+            android:label="GridLayoutRVTest" />
+        <activity
+            android:name=".CustomSwipeToRefreshRefreshActivity"
+            android:label="CustomSwipeToRefreshRefreshActivity" />
+        <activity
+            android:name=".TestAdMob"
+            android:label="TestAdMob" />
+        <activity
+            android:name=".TestExpandableRV"
+            android:label="TestExpandableRV" />
+        <activity
+            android:name=".DebugLoadMoreActivity"
+            android:label="DebugLoadMoreActivity" />
+        <activity
+            android:name=".scrollableobservable.ScrollObservablesActivity"
+            android:label="ScrollObservablesActivity" />
+        <activity
+            android:name=".DragActivity"
+            android:label="DragActivity" />
+        <activity
+            android:name=".swipelist.SwipeListViewExampleActivity"
+            android:label="SwipeListViewExampleActivity" />
+        <activity
+            android:name=".TestAdvancedAdmobActivity"
+            android:label="TestAdvancedAdmobActivity" />
+    </application>
+
+</manifest>
